@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gwirjayan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <style>
+    @keyframes underlineAnimation {
+        0% {
+            width: 0;
+        }
+        30% {
+            width: 90%;
+        }
+        50% {
+            width: 100%;
+        }
+        70% {
+            width: 50%;
+        }
+        100% {
+            width: 0;
+        }
+    }
+
+    .animate-underline {
+        display: inline-block;
+        position: relative;
+    }
+
+    .animate-underline::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 8px;
+        background-color: pink;
+        animation: underlineAnimation 6s infinite;
+    }
+
+</style>
+</head>
+<body class="bg-gray-900 font-mono" >
+<nav class="bg-transparent p-4 top-0 ml-0 w-full border-b-2 border-white">
+  <div class="container mx-auto flex md:justify-evenly justify-between items-center ">
+    <a href="#home" class="text-xl font-semibold bg-gradient-to-tr from-green-300 to-blue-500 text-transparent bg-clip-text hover:underline decoration-yellow-500 hidden lg:block">
+      Gwirjayan
+    </a>
+    <a href="#" class="text-xl font-semibold bg-gradient-to-tr from-green-300 to-blue-500 text-transparent bg-clip-text hover:underline decoration-yellow-500 block lg:hidden">
+      @Gwy
+    </a>
+    
+    <div class="text-sm md:text-xl">
+      <a href="#" class=" text-gray-300 hover:text-white">Blog</a>
+      <a href="#About" class="text-gray-300 hover:text-white">About</a>
+      <a href="#Project" class="text-gray-300 hover:text-white">Project</a>
+      <a href="#Contact" class="text-gray-300 hover:text-white">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container  ">
+<section  class="home"
+id="home">
+      <div class="mt-20 mx-auto flex items-start justify-start px-4 lg:px-48 ">
+        <h1 class="font-mono lg:text-8xl text-6xl font-extrabold text-yellow-50 whitespace-pre-line">
+          Think <span class="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 bg-clip-text text-transparent underline decoration-yellow-500">Globally</span>  
+          Act <span class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent underline decoration-pink-500"> Locally </span>
+        </h1>        
+    </div>
+    <div>
+    <div class="flex items-center justify-center mt-20 px-auto md:px-0 md:mt-60">
+     <a href="https://github.com/athazayyan">
+     <div class="flex flex-row"> 
+      
+      <img src="Asset/Octo_githhub.png" class="w-10" alt="Octo Github">
+      <p class="inline text-gray-300 ml-1 pt-2">GH</p>
+    </div>
+  </a>
+  <a href="https://www.linkedin.com/in/achmad-atha-zayyan-1538a0244/" class="ml-2">
+    <div class="flex flex-row"> 
+     <img src="Asset/Burung_linkedin.png" class="w-10" alt="Octo Github">
+     <p class="inline text-gray-300 pt-2">LD</p>
+   </div>
+ </a><a href="https://www.instagram.com/athazayyan_/" class="ml-2">
+  <div class="flex flex-row"> 
+   <img src="Asset/Kucing_Ig.png" class="w-10" alt="Octo Github">
+   <p class="inline text-gray-300 pt-2">IG</p>
+ </div>
+</a>
+      
+    </div>
+  
+
+</section>
+
+<section class="About pt-10" id="About">
+  <div class="mt-40 px-2 mx-auto lg:px-48 relative"  >
+      <p class=" text-blue-950 font-semibold mt-4 bg-blue-300 pt-10 pb-8 px-5  border-l-4 border-t-4 border-yellow-200">
+        Hi there! My name is Atha Zayyan,&#128008; but my friends call me Gwirjayan <i class="font-normal">(Not My friends sih.. just somebody calling himself... but not aiming to be self-claiming)</i>. I'm a coding ninja by day and a meme lord by night. When I'm not busy debugging, you can find me perfecting my coffee brewing skills or binge-watching cat videos. Welcome to my quirky corner of the internet!
+      </p>
+      <h1 class="top-0 right-0 md:right-40 absolute text-4xl font-bold text-black bg-yellow-100 inline-block px-4 transform -translate-y-3 border-l-4 border-t-4 border-indigo-700">About Me <span class="line-through text-gray-500 break-normal text-2xl md:text-4xl">Pick Me</span></h1>
+
+  </div>
+</section>
+<section id="Project" class="pt-10 bg-gray-900">
+  <h1 class="mt-20 mx-auto px-4 lg:px-48 text-4xl text-white font-bold mb-8 text-center">
+    What I`ve Done <span class="text-gray-400">And Still Counting lah...</span>
+  </h1>
+  <div class="container mt-4 mx-auto flex justify-center">
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper5 w-full">
+
+    <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="w-full sm:w-full md:w-auto lg:w-auto rounded overflow-hidden shadow-lg bg-white mx-auto">
+            <img class="w-full h-48 object-cover" src="Asset/Latar Belaknag Jumbotrin pesawat(1).png" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-center">banding-banding-universitas-iisma</div>
+              <p class="text-gray-700 text-base text-justify">
+                This project is a comprehensive comparison tool for universities participating in the IISMA program. It helps students make informed decisions by providing detailed information and comparisons of various universities.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2 justify-between items-center flex">
+              <span class="inline-block bg-green-400 rounded-md px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a href="https://bandingbandinguniversitasiisma.streamlit.app/"  target="_blank" rel="noopener noreferrer">See Here</a></span>
+              
+              <div>
+              <span class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><button class="rounded-md bg-blue-600 p-2.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow-lg focus:bg-blue-700 focus:shadow-none active:bg-blue-700 hover:bg-blue-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+              </button> </span>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="w-full sm:w-full md:w-auto lg:w-auto rounded overflow-hidden shadow-lg bg-white mx-auto">
+            <img class="w-full h-48 object-cover" src="Asset/Latar Belaknag Jumbotrin pesawat(1).png" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-center">The Coldest Sunset</div>
+              <p class="text-gray-700 text-base text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2 justify-between items-center flex">
+              <span class="inline-block bg-green-400 rounded-md px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a href="https://bandingbandinguniversitasiisma.streamlit.app/"  target="_blank" rel="noopener noreferrer">See Here</a></span>
+              
+              <div>
+              <span class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><button class="rounded-md bg-blue-600 p-2.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow-lg focus:bg-blue-700 focus:shadow-none active:bg-blue-700 hover:bg-blue-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+              </button> </span>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="w-full sm:w-full md:w-auto lg:w-auto rounded overflow-hidden shadow-lg bg-white mx-auto">
+            <img class="w-full h-48 object-cover" src="Asset/Latar Belaknag Jumbotrin pesawat(1).png" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-center">The Coldest Sunset</div>
+              <p class="text-gray-700 text-base text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2 justify-between items-center flex">
+              <span class="inline-block bg-green-400 rounded-md px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a href="https://bandingbandinguniversitasiisma.streamlit.app/"  target="_blank" rel="noopener noreferrer">See Here</a></span>
+              
+              <div>
+              <span class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><button class="rounded-md bg-blue-600 p-2.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow-lg focus:bg-blue-700 focus:shadow-none active:bg-blue-700 hover:bg-blue-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+              </button> </span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+  </section>
+  <section id="Contact" class="container mt-4 mx-auto flex justify-center p-2">  
+<div class="flex min-h-screen items-center justify-start  text-white">
+  <div class="mx-auto w-full max-w-lg">
+    <h1 class="text-4xl font-medium">Contact us</h1>
+    <p class="mt-3">Email us at atha.al.khand@gmail.com or message us here:</p>
+
+    <form action="https://api.web3forms.com/submit" class="mt-10">
+    
+    <!-- This is a working contact form. 
+         Get your free access key from: https://web3forms.com/  -->
+
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> 
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="relative z-0">
+          <input type="text" name="name" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+          <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your name</label>
+        </div>
+        <div class="relative z-0">
+          <input type="text" name="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+          <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your email</label>
+        </div>
+        <div class="relative z-0 col-span-2">
+          <textarea name="message" rows="5" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
+          <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your message</label>
+        </div>
+      </div>
+      <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Send Message</button>
+    </form>
+  </div>
+</div>
+  </section>
+
+  <marquee class="bg-gradient-to-r from-green-400 to-blue-500 bottom-0">
+    <h1 class="text-2xl text-gray-900 font-bold">Gwirjayan | I Dont Mean Anything With This Marquee Except to Learn  It, So I put it here</h1>
+  </marquee>
+  
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper5 = new Swiper(".mySwiper5", {
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: ["-20%", 0, -400],
+        rotate: [0, 0, -20],
+      },
+      next: {
+        shadow: true,
+        translate: ["20%", 0, -400],
+        rotate: [0, 0, 20],
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
+</body>
+</html>
